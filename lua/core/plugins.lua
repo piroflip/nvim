@@ -37,6 +37,11 @@ packer.startup {
       "moll/vim-bbye",
     }
 
+    -- Save cursor position
+    use {
+      "farmergreg/vim-lastplace",
+    }
+
     -- File explorer
     use {
       "kyazdani42/nvim-tree.lua",
