@@ -132,6 +132,13 @@ function M.config()
       h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
       v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
     },
+    
+    v = {
+      name = "VCS",
+      d = { "<cmd>VCSDiff<cr>", "Show Diff" },
+      n = { "<cmd>VCSAnnotate<cr>", "Annotate" },
+    },
+
   }
 
   which_key.setup(setup)

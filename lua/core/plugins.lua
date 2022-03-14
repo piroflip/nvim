@@ -55,6 +55,11 @@ packer.startup {
     use {
       "itchyny/lightline.vim",
     }
+    
+    -- VCSCommand
+    use {
+      "vim-scripts/vcscommand.vim",
+    }
 
     -- Smooth escaping
     use {
