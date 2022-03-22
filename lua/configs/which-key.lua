@@ -139,6 +139,16 @@ function M.config()
       n = { "<cmd>VCSAnnotate<cr>", "Annotate" },
     },
 
+-- Telescope
+    f = {
+      name = "Find",
+      g = { "<cmd>Telescope live_grep<CR>", "Live Grep" },
+      f = { "<cmd>Telescope find_files<CR>", "Files" },
+      b = { "<cmd>Telescope buffers<CR>", "Buffers" },
+      h = { "<cmd>Telescope help_tags<CR>", "Tags" },
+      o = { "<cmd>Telescope oldfiles<CR>", "Recent" },
+      w = { "<cmd>Telescope grep_string<CR>", "Word Under Cursor" },
+    },
   }
 
   which_key.setup(setup)

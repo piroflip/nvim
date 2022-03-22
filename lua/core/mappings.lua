@@ -37,16 +37,6 @@ map("n", "<leader>bm", "<cmd>DashboardJumpMarks<CR>", opts)
 map("n", "<leader>sl", "<cmd>SessionLoad<CR>", opts)
 map("n", "<leader>ss", "<cmd>SessionSave<CR>", opts)
 
--- Telescope
-map("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", opts)
-map("n", "<leader>gt", "<cmd>Telescope git_status<CR>", opts)
--- map("n", "<leader>gc", "<cmd>Telescope git_commits<cr>", opts)
-map("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
-map("n", "<leader>fb", "<cmd>Telescope buffers<CR>", opts)
-map("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", opts)
-map("n", "<leader>fo", "<cmd>Telescope oldfiles<CR>", opts)
-map('n', '<leader>fw', "<cmd>Telescope grep_string<CR>", opts)
-
 -- Lspsaga
 map("n", "gl", "<cmd>Lspsaga show_line_diagnostics<CR>", opts)
 map("n", "ca", "<cmd>Lspsaga code_action<CR>", opts)

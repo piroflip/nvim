@@ -152,6 +152,24 @@ packer.startup {
       },
     }
 
+    -- Conflict motion
+    use {
+      "inkarkat/vim-ConflictMotions",
+      event = "BufRead",
+      requires = {
+        {
+          -- Count Jump
+          "inkarkat/vim-CountJump",
+          before = "vim-ConflictMotions",
+        },
+        {
+          -- Common Library
+          "inkarkat/vim-ingo-library",
+          before = "vim-ConflictMotions",
+        },
+      },
+    }
+
     -- Completion engine
     use {
       "hrsh7th/nvim-cmp",
@@ -221,7 +239,7 @@ packer.startup {
     use {
       "joshdick/onedark.vim"
     }
-
+    
   end,
   config = {
     compile_path = vim.fn.stdpath "config" .. "/lua/packer_compiled.lua",
